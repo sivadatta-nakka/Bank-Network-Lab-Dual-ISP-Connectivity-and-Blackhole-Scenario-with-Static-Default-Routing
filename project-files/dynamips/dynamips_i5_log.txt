@@ -1,0 +1,52 @@
+Sep 22 10:27:38.648 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 22 10:27:38.648 HYPERVISOR: Started on IP = localhost, TCP port = 64529.
+Sep 22 10:27:39.148 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 22 10:27:39.148 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\aptsadmin\GNS3\projects\sbi\project-files\dynamips 
+Sep 22 10:27:39.148 GENERAL: working_dir=C:\Users\aptsadmin\GNS3\projects\sbi\project-files\dynamips
+Sep 22 10:27:39.148 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\aptsadmin\GNS3\projects\sbi\project-files\dynamips\27d1e056-60ba-4cb5-9a41-af14ecd1c39b 
+Sep 22 10:27:39.148 GENERAL: working_dir=C:\Users\aptsadmin\GNS3\projects\sbi\project-files\dynamips\27d1e056-60ba-4cb5-9a41-af14ecd1c39b
+Sep 22 10:27:39.148 HYPERVISOR: exec_cmd: vm create Google 3 c7200 
+Sep 22 10:27:39.148 VM: VM Google created.
+Sep 22 10:27:39.148 HYPERVISOR: exec_cmd: vm set_con_tcp_port Google 5008 
+Sep 22 10:27:39.148 HYPERVISOR: exec_cmd: c7200 get_mac_addr Google 
+Sep 22 10:27:39.148 HYPERVISOR: exec_cmd: vm get_status Google 
+Sep 22 10:27:39.148 HYPERVISOR: exec_cmd: vm slot_add_binding Google 0 0 C7200-IO-FE 
+Sep 22 10:27:39.148 HYPERVISOR: exec_cmd: vm set_disk0 Google 0 
+Sep 22 10:27:39.148 HYPERVISOR: exec_cmd: vm set_exec_area Google 64 
+Sep 22 10:27:39.163 HYPERVISOR: exec_cmd: vm set_ios Google C:/Users/aptsadmin/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Sep 22 10:27:39.163 HYPERVISOR: exec_cmd: c7200 set_mac_addr Google ca03.2370.0000 
+Sep 22 10:27:39.163 HYPERVISOR: exec_cmd: vm set_nvram Google 512 
+Sep 22 10:27:39.163 HYPERVISOR: exec_cmd: vm set_ram Google 512 
+Sep 22 10:27:39.163 HYPERVISOR: exec_cmd: vm get_status Google 
+Sep 22 10:27:39.163 HYPERVISOR: exec_cmd: vm slot_add_binding Google 1 0 PA-GE 
+Sep 22 10:27:39.163 HYPERVISOR: exec_cmd: vm get_status Google 
+Sep 22 10:27:39.163 HYPERVISOR: exec_cmd: vm slot_add_binding Google 2 0 PA-GE 
+Sep 22 10:27:39.163 HYPERVISOR: exec_cmd: vm get_status Google 
+Sep 22 10:27:39.163 HYPERVISOR: exec_cmd: vm slot_add_binding Google 3 0 PA-GE 
+Sep 22 10:27:39.163 HYPERVISOR: exec_cmd: vm get_status Google 
+Sep 22 10:27:39.163 HYPERVISOR: exec_cmd: vm slot_add_binding Google 4 0 PA-GE 
+Sep 22 10:27:39.163 HYPERVISOR: exec_cmd: vm get_status Google 
+Sep 22 10:27:39.163 HYPERVISOR: exec_cmd: vm slot_add_binding Google 5 0 PA-FE-TX 
+Sep 22 10:27:39.163 HYPERVISOR: exec_cmd: vm get_status Google 
+Sep 22 10:27:39.163 HYPERVISOR: exec_cmd: vm slot_add_binding Google 6 0 PA-8E 
+Sep 22 10:27:39.163 HYPERVISOR: exec_cmd: vm set_con_tcp_port Google 5008 
+Sep 22 10:27:40.491 HYPERVISOR: exec_cmd: nio create_udp udp-3cbaf2a2-56c9-4c9d-b425-e19dd604bfdc 10026 127.0.0.1 10027 
+Sep 22 10:27:40.757 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Google 2 0 udp-3cbaf2a2-56c9-4c9d-b425-e19dd604bfdc 
+Sep 22 10:27:40.757 HYPERVISOR: exec_cmd: vm get_status Google 
+Sep 22 10:27:40.819 HYPERVISOR: exec_cmd: nio create_udp udp-68053d0b-9d6f-4ab4-a51f-21e2ef5f6d7a 10032 127.0.0.1 10033 
+Sep 22 10:27:40.819 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Google 3 0 udp-68053d0b-9d6f-4ab4-a51f-21e2ef5f6d7a 
+Sep 22 10:27:40.819 HYPERVISOR: exec_cmd: vm get_status Google 
+Sep 22 10:33:21.379 HYPERVISOR: exec_cmd: vm set_ios Google C:/Users/aptsadmin/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Sep 22 10:33:33.519 HYPERVISOR: exec_cmd: vm set_ios Google C:/Users/aptsadmin/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Sep 22 10:33:57.051 HYPERVISOR: exec_cmd: vm set_ios Google C:/Users/aptsadmin/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Sep 22 10:34:23.960 HYPERVISOR: exec_cmd: vm set_ios Google C:/Users/aptsadmin/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Sep 22 10:34:24.006 HYPERVISOR: exec_cmd: vm set_ios Google C:/Users/aptsadmin/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Sep 22 10:34:35.491 HYPERVISOR: exec_cmd: vm set_ios Google C:/Users/aptsadmin/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Sep 22 10:51:01.409 HYPERVISOR: exec_cmd: vm set_ghost_status Google 2 
+Sep 22 10:51:01.409 HYPERVISOR: exec_cmd: vm set_ghost_file Google C:\Users\aptsadmin\GNS3\projects\sbi\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-512.ghost 
+Sep 22 10:51:01.409 HYPERVISOR: exec_cmd: vm get_status Google 
+Sep 22 10:51:01.424 HYPERVISOR: exec_cmd: vm set_config Google configs\i3_startup-config.cfg 
+Sep 22 10:51:01.424 HYPERVISOR: exec_cmd: vm start Google 
+Sep 22 10:51:31.773 HYPERVISOR: exec_cmd: vm extract_config Google 
+Sep 22 11:26:32.357 HYPERVISOR: exec_cmd: vm extract_config Google 
+Sep 22 13:02:03.849 HYPERVISOR: exec_cmd: vm extract_config Google 

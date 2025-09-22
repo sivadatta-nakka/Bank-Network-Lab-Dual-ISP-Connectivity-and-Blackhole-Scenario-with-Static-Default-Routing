@@ -1,0 +1,48 @@
+Sep 22 10:27:38.054 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 22 10:27:38.054 HYPERVISOR: Started on IP = localhost, TCP port = 64526.
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\aptsadmin\GNS3\projects\sbi\project-files\dynamips 
+Sep 22 10:27:38.554 GENERAL: working_dir=C:\Users\aptsadmin\GNS3\projects\sbi\project-files\dynamips
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\aptsadmin\GNS3\projects\sbi\project-files\dynamips\36e93169-5a50-41ef-b082-83b62065269f 
+Sep 22 10:27:38.554 GENERAL: working_dir=C:\Users\aptsadmin\GNS3\projects\sbi\project-files\dynamips\36e93169-5a50-41ef-b082-83b62065269f
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: vm create TATA 4 c7200 
+Sep 22 10:27:38.554 VM: VM TATA created.
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: vm set_con_tcp_port TATA 5010 
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: c7200 get_mac_addr TATA 
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: vm get_status TATA 
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: vm slot_add_binding TATA 0 0 C7200-IO-FE 
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: vm set_disk0 TATA 0 
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: vm set_exec_area TATA 64 
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: vm set_ios TATA C:/Users/aptsadmin/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: c7200 set_mac_addr TATA ca04.28f8.0000 
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: vm set_nvram TATA 512 
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: vm set_ram TATA 512 
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: vm get_status TATA 
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: vm slot_add_binding TATA 1 0 PA-GE 
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: vm get_status TATA 
+Sep 22 10:27:38.554 HYPERVISOR: exec_cmd: vm slot_add_binding TATA 2 0 PA-GE 
+Sep 22 10:27:38.569 HYPERVISOR: exec_cmd: vm get_status TATA 
+Sep 22 10:27:38.569 HYPERVISOR: exec_cmd: vm slot_add_binding TATA 3 0 PA-GE 
+Sep 22 10:27:38.569 HYPERVISOR: exec_cmd: vm get_status TATA 
+Sep 22 10:27:38.569 HYPERVISOR: exec_cmd: vm slot_add_binding TATA 4 0 PA-GE 
+Sep 22 10:27:38.569 HYPERVISOR: exec_cmd: vm get_status TATA 
+Sep 22 10:27:38.569 HYPERVISOR: exec_cmd: vm slot_add_binding TATA 5 0 PA-FE-TX 
+Sep 22 10:27:38.569 HYPERVISOR: exec_cmd: vm get_status TATA 
+Sep 22 10:27:38.569 HYPERVISOR: exec_cmd: vm slot_add_binding TATA 6 0 PA-8E 
+Sep 22 10:27:39.913 HYPERVISOR: exec_cmd: nio create_udp udp-0e042441-6e75-479c-9038-c9021919edf2 10008 127.0.0.1 10009 
+Sep 22 10:27:40.179 HYPERVISOR: exec_cmd: vm slot_add_nio_binding TATA 1 0 udp-0e042441-6e75-479c-9038-c9021919edf2 
+Sep 22 10:27:40.179 HYPERVISOR: exec_cmd: vm get_status TATA 
+Sep 22 10:27:40.804 HYPERVISOR: exec_cmd: nio create_udp udp-33f655f8-c70f-4669-b9ab-240d86344f85 10030 127.0.0.1 10031 
+Sep 22 10:27:40.804 HYPERVISOR: exec_cmd: vm slot_add_nio_binding TATA 2 0 udp-33f655f8-c70f-4669-b9ab-240d86344f85 
+Sep 22 10:27:40.804 HYPERVISOR: exec_cmd: vm get_status TATA 
+Sep 22 10:33:21.300 HYPERVISOR: exec_cmd: vm set_ios TATA C:/Users/aptsadmin/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Sep 22 10:33:33.519 HYPERVISOR: exec_cmd: vm set_ios TATA C:/Users/aptsadmin/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Sep 22 10:35:04.663 HYPERVISOR: exec_cmd: vm set_ios TATA C:/Users/aptsadmin/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Sep 22 10:35:22.922 HYPERVISOR: exec_cmd: vm set_ios TATA C:/Users/aptsadmin/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Sep 22 10:51:01.065 HYPERVISOR: exec_cmd: vm set_ghost_status TATA 2 
+Sep 22 10:51:01.065 HYPERVISOR: exec_cmd: vm set_ghost_file TATA C:\Users\aptsadmin\GNS3\projects\sbi\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-512.ghost 
+Sep 22 10:51:01.065 HYPERVISOR: exec_cmd: vm get_status TATA 
+Sep 22 10:51:01.081 HYPERVISOR: exec_cmd: vm set_config TATA configs\i4_startup-config.cfg 
+Sep 22 10:51:01.081 HYPERVISOR: exec_cmd: vm start TATA 
+Sep 22 10:51:31.439 HYPERVISOR: exec_cmd: vm extract_config TATA 
+Sep 22 13:02:03.849 HYPERVISOR: exec_cmd: vm extract_config TATA 

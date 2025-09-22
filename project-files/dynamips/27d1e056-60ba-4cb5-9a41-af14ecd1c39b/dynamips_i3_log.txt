@@ -1,0 +1,48 @@
+Sep 22 10:27:37.460 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Sep 22 10:27:37.460 HYPERVISOR: Started on IP = localhost, TCP port = 64523.
+Sep 22 10:27:37.976 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 22 10:27:37.976 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\aptsadmin\GNS3\projects\sbi\project-files\dynamips 
+Sep 22 10:27:37.976 GENERAL: working_dir=C:\Users\aptsadmin\GNS3\projects\sbi\project-files\dynamips
+Sep 22 10:27:37.976 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\aptsadmin\GNS3\projects\sbi\project-files\dynamips\16579985-73c4-4776-a89f-df68d7740590 
+Sep 22 10:27:37.976 GENERAL: working_dir=C:\Users\aptsadmin\GNS3\projects\sbi\project-files\dynamips\16579985-73c4-4776-a89f-df68d7740590
+Sep 22 10:27:37.976 HYPERVISOR: exec_cmd: vm create Airtel 2 c7200 
+Sep 22 10:27:37.976 VM: VM Airtel created.
+Sep 22 10:27:37.976 HYPERVISOR: exec_cmd: vm set_con_tcp_port Airtel 5006 
+Sep 22 10:27:37.976 HYPERVISOR: exec_cmd: c7200 get_mac_addr Airtel 
+Sep 22 10:27:37.976 HYPERVISOR: exec_cmd: vm get_status Airtel 
+Sep 22 10:27:37.976 HYPERVISOR: exec_cmd: vm slot_add_binding Airtel 0 0 C7200-IO-FE 
+Sep 22 10:27:37.976 HYPERVISOR: exec_cmd: vm set_disk0 Airtel 0 
+Sep 22 10:27:37.976 HYPERVISOR: exec_cmd: vm set_exec_area Airtel 64 
+Sep 22 10:27:37.991 HYPERVISOR: exec_cmd: vm set_ios Airtel C:/Users/aptsadmin/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Sep 22 10:27:37.991 HYPERVISOR: exec_cmd: c7200 set_mac_addr Airtel ca02.27c0.0000 
+Sep 22 10:27:37.991 HYPERVISOR: exec_cmd: vm set_nvram Airtel 512 
+Sep 22 10:27:37.991 HYPERVISOR: exec_cmd: vm set_ram Airtel 512 
+Sep 22 10:27:37.991 HYPERVISOR: exec_cmd: vm get_status Airtel 
+Sep 22 10:27:37.991 HYPERVISOR: exec_cmd: vm slot_add_binding Airtel 1 0 PA-GE 
+Sep 22 10:27:37.991 HYPERVISOR: exec_cmd: vm get_status Airtel 
+Sep 22 10:27:37.991 HYPERVISOR: exec_cmd: vm slot_add_binding Airtel 2 0 PA-GE 
+Sep 22 10:27:37.991 HYPERVISOR: exec_cmd: vm get_status Airtel 
+Sep 22 10:27:37.991 HYPERVISOR: exec_cmd: vm slot_add_binding Airtel 3 0 PA-GE 
+Sep 22 10:27:37.991 HYPERVISOR: exec_cmd: vm get_status Airtel 
+Sep 22 10:27:37.991 HYPERVISOR: exec_cmd: vm slot_add_binding Airtel 4 0 PA-GE 
+Sep 22 10:27:37.991 HYPERVISOR: exec_cmd: vm get_status Airtel 
+Sep 22 10:27:37.991 HYPERVISOR: exec_cmd: vm slot_add_binding Airtel 5 0 PA-FE-TX 
+Sep 22 10:27:37.991 HYPERVISOR: exec_cmd: vm get_status Airtel 
+Sep 22 10:27:37.991 HYPERVISOR: exec_cmd: vm slot_add_binding Airtel 6 0 PA-8E 
+Sep 22 10:27:37.991 HYPERVISOR: exec_cmd: vm set_con_tcp_port Airtel 5006 
+Sep 22 10:27:39.210 HYPERVISOR: exec_cmd: nio create_udp udp-c563d524-1d9d-4ca8-bbad-fb89f6bf25fd 10002 127.0.0.1 10003 
+Sep 22 10:27:39.616 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Airtel 1 0 udp-c563d524-1d9d-4ca8-bbad-fb89f6bf25fd 
+Sep 22 10:27:39.616 HYPERVISOR: exec_cmd: vm get_status Airtel 
+Sep 22 10:27:40.476 HYPERVISOR: exec_cmd: nio create_udp udp-224a0a21-1ba2-4ee7-a257-b8a50927aa80 10024 127.0.0.1 10025 
+Sep 22 10:27:40.476 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Airtel 2 0 udp-224a0a21-1ba2-4ee7-a257-b8a50927aa80 
+Sep 22 10:27:40.476 HYPERVISOR: exec_cmd: vm get_status Airtel 
+Sep 22 10:33:21.300 HYPERVISOR: exec_cmd: vm set_ios Airtel C:/Users/aptsadmin/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Sep 22 10:33:33.504 HYPERVISOR: exec_cmd: vm set_ios Airtel C:/Users/aptsadmin/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Sep 22 10:35:45.407 HYPERVISOR: exec_cmd: vm set_ios Airtel C:/Users/aptsadmin/GNS3/images/IOS/c7200-adventerprisek9-mz.153-3.XB12.image 
+Sep 22 10:51:01.049 HYPERVISOR: exec_cmd: vm set_ghost_status Airtel 2 
+Sep 22 10:51:01.065 HYPERVISOR: exec_cmd: vm set_ghost_file Airtel C:\Users\aptsadmin\GNS3\projects\sbi\project-files\dynamips\c7200-adventerprisek9-mz.153-3.XB12.image-512.ghost 
+Sep 22 10:51:01.065 HYPERVISOR: exec_cmd: vm get_status Airtel 
+Sep 22 10:51:01.065 HYPERVISOR: exec_cmd: vm set_config Airtel configs\i2_startup-config.cfg 
+Sep 22 10:51:01.065 HYPERVISOR: exec_cmd: vm start Airtel 
+Sep 22 10:51:31.439 HYPERVISOR: exec_cmd: vm extract_config Airtel 
+Sep 22 13:02:03.849 HYPERVISOR: exec_cmd: vm extract_config Airtel 

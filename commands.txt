@@ -1,0 +1,73 @@
+------------Google
+config t
+interface loopback 0 
+ip add 8.8.8.8 255.2555.255.255
+
+int g2/0
+ip add 192.168.24.4 255.255.255.0
+no shut
+
+int g3/0
+ip add 192.168.34.4 255.255.255.0
+no shut
+
+do wr
+
+ip route 192.168.1.0 255.255.255.0 192.168.24.2 10
+ip route 192.168.1.0 255.255.255.0 192.168.34.3 5
+
+sh ip route
+
+
+
+-------------DHCP Server
+
+int e6/0
+ip add 192.168.1.100 255.255.255.0
+no shut
+do wr
+
+ip route 0.0.0.0 0.0.0.0 192.168.12.2 5
+ip route 0.0.0.0 0.0.0.0 192.168.13.3 10
+
+int g1/0
+ip add 192.168.12.1 255.255.255.0
+no shut
+
+int g2/0
+ip add 192.168.13.1 255.255.255.0
+no shut
+
+sh ip route 
+
+
+int g1/0
+shut       ---- change the path to stand by router as the current link with less AD is down 
+
+-------------Airtel
+int g2/0
+ip add 192.168.24.2 255.255.255.0
+no shut
+
+int g1/0
+ip add 192.168.12.2 255.255.255.0
+no shut
+
+ip route 8.8.8.8 255.255.255.255 192.168.24.4
+
+ip route 192.168.1.0 255.255.255.0 192.168.12.1
+
+sh ip route
+
+----------------TATA
+int g2/0
+ip add 192.168.34.3 255.255.255.0
+no shut
+int g1/0
+ip add 192.168.13.3 255.255.255.0
+
+ip route 8.8.8.8 255.255.255.255 192.168.34.4
+ip route 192.168.1.0 255.255.255.0 192.168.13.1
+
+show ip route
+
